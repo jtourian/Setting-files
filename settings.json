@@ -1,0 +1,144 @@
+{
+  // 全プロファイルに適用する設定キー
+  "workbench.settings.applyToAllProfiles": [
+    "extensions.experimental.affinity",
+    "vscode-neovim.neovimExecutablePaths.win32",
+    "vscode-neovim.neovimInitVimPaths.darwin",
+    "editor.lineNumbers",
+    "editor.cursorSmoothCaretAnimation",
+    "editor.wordWrap",
+    "vscode-neovim.compositeKeys",
+    "editor.renderWhitespace",
+    "editor.renderControlCharacters",
+    "editor.quickSuggestions",
+    "editor.acceptSuggestionOnCommitCharacter",
+    "workbench.activityBar.location",
+    "workbench.sideBar.location",
+    "workbench.iconTheme",
+    "workbench.startupEditor",
+    "workbench.tips.enabled",
+    "breadcrumbs.enabled",
+    "catppuccin-icons.hidesExplorerArrows",
+    "workbench.tree.renderIndentGuides",
+    "workbench.tree.indent",
+    "explorer.compactFolders",
+    "explorer.confirmDragAndDrop",
+    "explorer.confirmDelete",
+    "explorer.decorations.badges",
+    "window.zoomLevel",
+    "window.menuBarVisibility",
+    "editor.tokenColorCustomizations",
+    "workbench.colorTheme",
+    "window.commandCenter",
+    "editor.multiCursorModifier",
+    "json.schemaDownload.trustedDomains",
+    "editor.fontFamily",
+    "editor.fontSize",
+    "editor.cursorBlinking",
+    "editor.fontLigatures",
+    "editor.stickyScroll.enabled",
+    "files.trimTrailingWhitespace",
+    "files.insertFinalNewline",
+    "editor.occurrencesHighlight",
+    "editor.selectionHighlight",
+    "files.autoSave",
+    "editor.defaultFormatter",
+    "editor.formatOnSave",
+    "editor.lineHeight",
+    "git.autofetch",
+    "bookmarks.saveBookmarksInProject",
+    "discord.enabled",
+    "discord.removeLowerDetails",
+    "terminal.integrated",
+  ],
+  // --- 拡張機能関連 ---
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1,
+  },
+  "vscode-neovim.neovimExecutablePaths.win32": "C:/Program Files/Neovim/bin/nvim.exe",
+  "vscode-neovim.neovimInitVimPaths.darwin": "C:/Users/joshua/AppData/Local/nvim/init.lua",
+  "vscode-neovim.compositeKeys": {
+    "jk": {
+      "command": "vscode-neovim.escape",
+    },
+  },
+
+  // --- エディタ表示・操作 ---
+  "editor.lineNumbers": "relative",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on",
+  },
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.fontFamily": "JuliaMono",
+  "editor.fontSize": 14,
+  "editor.cursorBlinking": "smooth",
+  "editor.fontLigatures": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
+  "editor.lineHeight": 1.6,
+
+  // --- ファイル操作 ---
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "onFocusChange",
+
+  // --- フォーマット ---
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // --- UI/ワークベンチ ---
+  "workbench.activityBar.location": "top",
+  "workbench.sideBar.location": "right",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+  "breadcrumbs.enabled": false,
+  "catppuccin-icons.hidesExplorerArrows": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 8,
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.decorations.badges": false,
+  "window.zoomLevel": 1,
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": false,
+
+  // --- カラーテーマ・装飾 ---
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic",
+        },
+      },
+    ],
+  },
+  "workbench.colorTheme": "Catppuccin Mocha",
+
+  // --- その他 ---
+  "json.schemaDownload.trustedDomains": {
+    "https://esm.sh/": true,
+  },
+  "git.autofetch": true,
+  "bookmarks.saveBookmarksInProject": true,
+  "discord.enabled": true,
+  "discord.removeLowerDetails": true,
+  "chat.viewSessions.orientation": "stacked",
+  "extensions.ignoreRecommendations": true,
+
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "security.workspace.trust.untrustedFiles": "open",
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+  },
+}
