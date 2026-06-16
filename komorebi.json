@@ -3,7 +3,7 @@
   "app_specific_configuration_path": "$Env:USERPROFILE/applications.json",
   "window_hiding_behaviour": "Cloak",
   "cross_monitor_move_behaviour": "Insert",
-  "default_workspace_padding": 3,
+  "default_workspace_padding": 5,
   "default_container_padding": 3,
   "border": true,
   "border_implementation": "Windows",
@@ -17,8 +17,8 @@
     "monocle": "#f38ba8",
     "unfocused": "#030303"
   },
-  "mouse_follows_focus": true,
-  "transparency": true,
+  "mouse_follows_focus": false,
+  "transparency": false,
   "transparency_alpha": 220,
   "transparency_ignore_rules": [
     {
@@ -31,6 +31,39 @@
       "id": "opera.exe",
       "matching_strategy": "Equals"
     }
+  ],
+  "ignore_rules": [
+    {
+      "kind": "Exe",
+      "id": "Riot Client.exe",
+      "matching_strategy": "Equals"
+    }
+  ],
+  "floating_applications": [
+    [
+      {
+        "kind": "Exe",
+        "id": "ApplicationFrameHost.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Title",
+        "id": "電卓",
+        "matching_strategy": "Contains"
+      }
+    ],
+    [
+      {
+        "kind": "Exe",
+        "id": "ApplicationFrameHost.exe",
+        "matching_strategy": "Equals"
+      },
+      {
+        "kind": "Title",
+        "id": "Calculator",
+        "matching_strategy": "Contains"
+      }
+    ]
   ],
   "animation": {
     "enabled": true,
@@ -58,6 +91,42 @@
   },
   "monitors": [
     {
+      "workspace_padding": 5,
+      "container_padding": 3,
+      "workspaces": [
+        {
+          "name": "I",
+          "layout": "BSP"
+        },
+        {
+          "name": "II",
+          "layout": "VerticalStack"
+        },
+        {
+          "name": "III",
+          "layout": "HorizontalStack"
+        },
+        {
+          "name": "IV",
+          "layout": "UltrawideVerticalStack"
+        },
+        {
+          "name": "V",
+          "layout": "Rows"
+        },
+        {
+          "name": "VI",
+          "layout": "Grid"
+        },
+        {
+          "name": "VII",
+          "layout": "RightMainVerticalStack"
+        }
+      ]
+    },
+    {
+      "workspace_padding": 10,
+      "container_padding": 6,
       "workspaces": [
         {
           "name": "I",
@@ -91,3 +160,4 @@
     }
   ]
 }
+
